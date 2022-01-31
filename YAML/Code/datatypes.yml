@@ -1,0 +1,53 @@
+# String variables
+myself: Susmita Dey
+fruit: "apple"
+job: 'swe'
+
+bio: |
+Hey, my name is Susmita Dey.
+I am a very nice dude.
+
+# write a single line in multiple lines 
+message: >
+this will
+all be
+in one single line
+
+# same as
+message: this will all be in one single line
+
+number: 5473
+marks: 98.76
+booleanValue: No #n,N,false,False, FALSE
+# same for true -> yes, y, Y, TRUE
+
+# specify the type 
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +540_000 # storing 540,000
+exponential numbers: 6.023E56
+
+# floating point numbers
+marks: !!float 58.89
+infinite: !!float .inf
+not a num: .nan
+
+# boolean type 
+booleanValue: !!bool No
+
+# string type 
+message: !!str this will all be in one single line
+
+
+# null 
+surname: !!null Null # or null or NULL or ~
+~: this is a null key
+
+# dates and time 
+date: !!timestamp 2002-12-14
+india time: 2001-12-15T02:59:43.10 +5:30
+no time zone: 2001-12-15T02:59:43.10

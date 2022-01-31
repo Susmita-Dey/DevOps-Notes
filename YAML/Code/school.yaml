@@ -1,0 +1,8 @@
+---
+School:
+- name: CJM
+  principal: Someone
+  Students:
+  - rno: 12
+    name: Susmita Dey
+    marks: 67
