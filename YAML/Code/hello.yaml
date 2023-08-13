@@ -1,0 +1,25 @@
+# key value pairs
+"apple": "I am a red fruit"
+1: "This is Abhi's Roll number"
+--- # The 3 dashes will tell yaml that the above and below part of this line are different documents
+# lists
+- apple
+- mango
+- banana
+- Apple
+# Note:- YAML is case-sensitive. So, apple != Apple in the above list of items.
+
+# In YAML, we use spaces for indentation and not TABS
+---
+# Block style
+cities:
+  - new dehli
+  - mumbai
+  - gujrat
+---
+cities: [new delhi, mumbai]
+---
+{ mango: "yellow fruit", age: 56 }
+... # This indicates the end of document to YAML
+
+# In YAML, there's no multi-line comments
