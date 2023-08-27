@@ -75,6 +75,86 @@ The root directory also contains the following files:
 
 ## Linux Commands 
 
+Following are some basic Linux commands:
+
+1. ls: ls allows us to view the directory and it's contents
+2. pwd: pwd is used to get our current directory where we are currently located.
+3. cd : cd is used to change directories i.e., from one directory to another directory.
+4. clear: clear is to clear the terminal screen and get to the top of the screen.
+5. lsb_release: lsb_release is used to print distribution-specific information.
+For example:
+    ```bash
+    ubuntu $ lsb_release -a
+    No LSB modules are available.
+    Distributor ID: Ubuntu
+    Description:    Ubuntu 20.04.5 LTS
+    Release:        20.04
+    Codename:       focal
+    ```
+6. man: man is an interface to the system reference manuals.
+7. cat: cat is used to print the contents present in a file. It is also used to concatenate 2 files.
+For example:
+    ```bash
+    ubuntu $ cat /etc/os-release
+    NAME="Ubuntu"
+    VERSION="20.04.5 LTS (Focal Fossa)"
+    ID=ubuntu
+    ID_LIKE=debian
+    PRETTY_NAME="Ubuntu 20.04.5 LTS"
+    VERSION_ID="20.04"
+    HOME_URL="https://www.ubuntu.com/"
+    SUPPORT_URL="https://help.ubuntu.com/"
+    BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+    PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+    VERSION_CODENAME=focal
+    UBUNTU_CODENAME=focal
+    ```
+8. uname: uname is used to print system information.
+    ```bash
+    ubuntu $ uname -a
+    Linux ubuntu 5.4.0-131-generic #147-Ubuntu SMP Fri Oct 14 17:07:22 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    ```
+9. lscpu: lscpu is used to display information about CPU architechture.
+10. lsmem: lsmem is used to display the memory information. It lists the ranges of available memory with their online status. 
+    ```bash
+    ubuntu $ lsmem
+    RANGE                                 SIZE  STATE REMOVABLE BLOCK
+    0x0000000000000000-0x000000007fffffff   2G online       yes  0-15
+
+    Memory block size:       128M
+    Total online memory:       2G
+    Total offline memory:      0B
+    ```
+11. find: find is used to search for files in a directory hierarchy.
+    ```bash
+    ubuntu $ find / -name 'syslog'
+    /run/systemd/journal/syslog
+    /var/log/syslog
+    /usr/local/go/src/log/syslog
+    ```
+12. less
+13. more
+14. grep 
+
+### Creating a User
+useradd - create a new user or update default new user information
+
+```bash
+ubuntu $ useradd -D
+GROUP=100
+HOME=/home
+INACTIVE=-1
+EXPIRE=
+SHELL=/bin/sh
+SKEL=/etc/skel
+CREATE_MAIL_SPOOL=no
+```
+This is the default configuration of stuffs like shell type, home, group, etc., for all users.
+
+By using `useradd -D -s /bin/bash`, you can change the default bash type to '/bin/bash' for all users.
+
+For all other commands, please refer to [My Handwritten Notes of Intro to Linux & Terminal Commands](/LINUX/Handwritten%20Notes%20of%20Intro%20to%20Linux%20&%20Terminal%20Commands.pdf)
+
 ## Packages 
 
 ## Create Files
