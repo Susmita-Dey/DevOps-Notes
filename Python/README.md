@@ -85,10 +85,6 @@ Operators are used to perform operations on variables and values.
 - Less Than: `<`
 - Greater Than or Equal To: `>=`
 - Less Than or Equal To: `<=`
-- Identity: `is`
-- Not Identity: `is not`
-- Membership: `in`
-- Not Membership: `not in`
 
 ### Logical Operators
 - Boolean AND: `and`
@@ -116,6 +112,10 @@ Operators are used to perform operations on variables and values.
 - `+` (Unary Plus)
 - `-` (Unary Minus)
 - `~` (Bitwise NOT)
+- Identity: `is`
+- Not Identity: `is not`
+- Membership: `in`
+- Not Membership: `not in`
 
 ## Variables
 Variables are containers for storing data values. They can be used to store any type of data.
@@ -167,3 +167,43 @@ written in
 more than just one line
 """
 ```
+
+## Input
+The `input()` function allows the user to input data into the program.
+
+Example code:
+```python
+name = input("Enter your name: ")
+print("Hello " + name)
+```
+Output:
+```bash
+Enter your name: John
+Hello John
+```
+
+- The `input()` function always returns a string
+- Prompts the user to input some data from the console
+- It accepts an optional parameter that can be used in order to display a message before the user inputs the data
+- A program that doesn't use any input function, is called a **deaf program**
+
+## Type Conversion or Casting
+The `int()`, `float()`, and `str()` functions allow you to convert data types.
+
+Example code:
+```python
+x = int(1) # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+```
+Same happens for the other data types.
+
+## String Operations
+
+- You can use + to concatenate strings
+- You can use * to repeat a string a several amount of times
+- You can use [] to get a character at a specific index
+- You can use [:] to get a range of characters
+- You can use in to check if a character is in a string
+- With the str function, you can convert any data type to a string
+
